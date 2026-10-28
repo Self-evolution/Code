@@ -1,0 +1,248 @@
+{
+  "source": "Supplied CAMPE V3 per-episode CSVs. Aggregates recomputed for README visualizations.",
+  "metric": "capture_success_medium is the fixed medium-profile episode indicator.",
+  "groups": {
+    "structured": {
+      "campe": {
+        "episodes": 40,
+        "capture_successes": 40,
+        "capture_percent": 100.0,
+        "radial_error_m": 1.4682145577046342,
+        "aoi_s": 0.3290116871297225
+      },
+      "ctta": {
+        "episodes": 40,
+        "capture_successes": 16,
+        "capture_percent": 40.0,
+        "radial_error_m": 1.903975123698689,
+        "aoi_s": 0.3301273389330907
+      },
+      "direct_finetune": {
+        "episodes": 40,
+        "capture_successes": 0,
+        "capture_percent": 0.0,
+        "radial_error_m": 13.021077566275702,
+        "aoi_s": 0.3687820300755973
+      },
+      "domain_randomization": {
+        "episodes": 40,
+        "capture_successes": 2,
+        "capture_percent": 5.0,
+        "radial_error_m": 2.7040864864245187,
+        "aoi_s": 0.37503394930079537
+      },
+      "source_only": {
+        "episodes": 40,
+        "capture_successes": 0,
+        "capture_percent": 0.0,
+        "radial_error_m": 2.801680279693046,
+        "aoi_s": 0.37557499893476765
+      },
+      "stdw": {
+        "episodes": 40,
+        "capture_successes": 0,
+        "capture_percent": 0.0,
+        "radial_error_m": 2.7284277302427036,
+        "aoi_s": 0.3750189434083136
+      }
+    },
+    "ood": {
+      "campe": {
+        "episodes": 100,
+        "capture_successes": 58,
+        "capture_percent": 57.99999999999999,
+        "radial_error_m": 2.8489896730471203,
+        "aoi_s": 0.661697338872048
+      },
+      "ctta": {
+        "episodes": 100,
+        "capture_successes": 49,
+        "capture_percent": 49.0,
+        "radial_error_m": 2.9852985909053324,
+        "aoi_s": 0.6270949126011142
+      },
+      "domain_randomization": {
+        "episodes": 100,
+        "capture_successes": 14,
+        "capture_percent": 14.000000000000002,
+        "radial_error_m": 3.781673393446413,
+        "aoi_s": 0.7678056652521912
+      },
+      "source_only": {
+        "episodes": 100,
+        "capture_successes": 13,
+        "capture_percent": 13.0,
+        "radial_error_m": 4.001709975005597,
+        "aoi_s": 0.7551755909310337
+      }
+    },
+    "coordination": {
+      "dual_plane": {
+        "episodes": 50,
+        "capture_successes": 6,
+        "capture_percent": 12.0,
+        "radial_error_m": 4.025873506109382,
+        "aoi_s": 1.4032721297740798
+      },
+      "dynamic_period": {
+        "episodes": 50,
+        "capture_successes": 6,
+        "capture_percent": 12.0,
+        "radial_error_m": 4.0970798392571455,
+        "aoi_s": 1.543296034659632
+      },
+      "fim": {
+        "episodes": 50,
+        "capture_successes": 8,
+        "capture_percent": 16.0,
+        "radial_error_m": 4.124455823777052,
+        "aoi_s": 1.509141504774301
+      },
+      "fim_mobility": {
+        "episodes": 50,
+        "capture_successes": 7,
+        "capture_percent": 14.000000000000002,
+        "radial_error_m": 4.0805150512203205,
+        "aoi_s": 1.5110673287097953
+      },
+      "fixed": {
+        "episodes": 50,
+        "capture_successes": 3,
+        "capture_percent": 6.0,
+        "radial_error_m": 4.358794580189593,
+        "aoi_s": 2.0792060620871653
+      },
+      "full_mpc": {
+        "episodes": 50,
+        "capture_successes": 12,
+        "capture_percent": 24.0,
+        "radial_error_m": 3.8162573462706684,
+        "aoi_s": 0.9300692198774054
+      }
+    }
+  },
+  "sources": {
+    "adaptation_raw.csv": {
+      "sha256": "f210483092aa02a005b4af5aa7cc9fb9f59781eed2efcb173fbf5497aaa4cd18",
+      "episodes": 240
+    },
+    "robustness_raw.csv": {
+      "sha256": "db08484effbba8418478e5d4ae1a62b08d66d7f31f2a44ad6fd6aaded1f1fc32",
+      "episodes": 400
+    },
+    "control_plane_raw.csv": {
+      "sha256": "6fd130a5759fd22ed37c9f6e733bc46206b620773fc128166d75e4b672cc8c5d",
+      "episodes": 300
+    }
+  },
+  "structured_by_scenario": {
+    "source_only": {
+      "gradual": {
+        "successes": 0,
+        "episodes": 10
+      },
+      "joint": {
+        "successes": 0,
+        "episodes": 10
+      },
+      "recurrent": {
+        "successes": 0,
+        "episodes": 10
+      },
+      "sudden": {
+        "successes": 0,
+        "episodes": 10
+      }
+    },
+    "domain_randomization": {
+      "gradual": {
+        "successes": 0,
+        "episodes": 10
+      },
+      "joint": {
+        "successes": 0,
+        "episodes": 10
+      },
+      "recurrent": {
+        "successes": 0,
+        "episodes": 10
+      },
+      "sudden": {
+        "successes": 2,
+        "episodes": 10
+      }
+    },
+    "direct_finetune": {
+      "gradual": {
+        "successes": 0,
+        "episodes": 10
+      },
+      "joint": {
+        "successes": 0,
+        "episodes": 10
+      },
+      "recurrent": {
+        "successes": 0,
+        "episodes": 10
+      },
+      "sudden": {
+        "successes": 0,
+        "episodes": 10
+      }
+    },
+    "stdw": {
+      "gradual": {
+        "successes": 0,
+        "episodes": 10
+      },
+      "joint": {
+        "successes": 0,
+        "episodes": 10
+      },
+      "recurrent": {
+        "successes": 0,
+        "episodes": 10
+      },
+      "sudden": {
+        "successes": 0,
+        "episodes": 10
+      }
+    },
+    "ctta": {
+      "gradual": {
+        "successes": 7,
+        "episodes": 10
+      },
+      "joint": {
+        "successes": 2,
+        "episodes": 10
+      },
+      "recurrent": {
+        "successes": 3,
+        "episodes": 10
+      },
+      "sudden": {
+        "successes": 4,
+        "episodes": 10
+      }
+    },
+    "campe": {
+      "gradual": {
+        "successes": 10,
+        "episodes": 10
+      },
+      "joint": {
+        "successes": 10,
+        "episodes": 10
+      },
+      "recurrent": {
+        "successes": 10,
+        "episodes": 10
+      },
+      "sudden": {
+        "successes": 10,
+        "episodes": 10
+      }
+    }
+  }
+}

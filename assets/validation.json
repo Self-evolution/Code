@@ -1,0 +1,82 @@
+{
+  "local_readme_asset_links": "PASS; Code.zip is the separately distributed implementation, not part of this documentation package",
+  "gif_files": [
+    {
+      "name": "aoi_distribution.gif",
+      "frames": 81,
+      "duration_ms": 10950,
+      "width": 1100,
+      "height": 660,
+      "bytes": 191391,
+      "loop": 0
+    },
+    {
+      "name": "benchmark_heatmap.gif",
+      "frames": 14,
+      "duration_ms": 13400,
+      "width": 1100,
+      "height": 660,
+      "bytes": 105439,
+      "loop": 0
+    },
+    {
+      "name": "evolution_heatmap.gif",
+      "frames": 91,
+      "duration_ms": 11060,
+      "width": 1100,
+      "height": 660,
+      "bytes": 485976,
+      "loop": 0
+    },
+    {
+      "name": "mission_replay.gif",
+      "frames": 101,
+      "duration_ms": 12400,
+      "width": 1100,
+      "height": 720,
+      "bytes": 841972,
+      "loop": 0
+    },
+    {
+      "name": "policy_evolution.gif",
+      "frames": 30,
+      "duration_ms": 10000,
+      "width": 1100,
+      "height": 620,
+      "bytes": 137257,
+      "loop": 0
+    },
+    {
+      "name": "radial_error_histogram.gif",
+      "frames": 40,
+      "duration_ms": 10650,
+      "width": 1100,
+      "height": 660,
+      "bytes": 179231,
+      "loop": 0
+    },
+    {
+      "name": "tracking_comparison.gif",
+      "frames": 101,
+      "duration_ms": 11960,
+      "width": 1100,
+      "height": 660,
+      "bytes": 257730,
+      "loop": 0
+    }
+  ],
+  "complete_gif_decoding": "PASS",
+  "static_png_decoding": "PASS",
+  "unchanged_benchmark_csv_hashes": "PASS (3/3)",
+  "benchmark_rows": {
+    "adaptation": 240,
+    "robustness": 400,
+    "coordination": 300
+  },
+  "scenario_cell_sample_sizes": "PASS; 10 seeds per cell in both success heatmaps",
+  "all_selected_histogram_samples_in_fixed_bins": "PASS (120/120)",
+  "readme_gif_count": 7,
+  "full_benchmark_rerun": false,
+  "new_representative_episode_runs": 3,
+  "retained_campe_trace_independently_reproduced": "PASS; exact agreement across all recorded fields"
+}

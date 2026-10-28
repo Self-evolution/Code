@@ -1,0 +1,56 @@
+{
+  "scope": "300 CAMPE post-step records from Joint / seed 0",
+  "normalization": "(x-row_min)/(row_max-row_min); no smoothing",
+  "rows": [
+    {
+      "name": "Model drift",
+      "min": 0.0064817806940549,
+      "max": 0.7215584339492543
+    },
+    {
+      "name": "Total discrepancy",
+      "min": 0.0111972228020453,
+      "max": 0.9489075510239467
+    },
+    {
+      "name": "Kinematic novelty",
+      "min": 0.0,
+      "max": 0.6861772627833282
+    },
+    {
+      "name": "Packet-error estimate",
+      "min": 0.016928,
+      "max": 0.3760477392161048
+    },
+    {
+      "name": "Mean AoI",
+      "min": 0.1554211889653972,
+      "max": 0.9133459804294966
+    },
+    {
+      "name": "Update strength",
+      "min": 0.1718458040623796,
+      "max": 0.8411479597666245
+    },
+    {
+      "name": "Control reservation",
+      "min": 0.8165924786339219,
+      "max": 0.848673388825429
+    },
+    {
+      "name": "Target speed",
+      "min": 0.9516843789337217,
+      "max": 1.4247401329305178
+    },
+    {
+      "name": "Mean AUV speed",
+      "min": 0.7723487448423304,
+      "max": 2.937158454592118
+    },
+    {
+      "name": "Formation score",
+      "min": 0.3191547334197303,
+      "max": 0.9662588014153004
+    }
+  ]
+}

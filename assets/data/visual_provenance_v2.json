@@ -1,0 +1,75 @@
+{
+  "release": "CAMPE visual README v2",
+  "purpose": "Replace schematic-heavy presentation with recorded simulations and released multi-seed statistical charts.",
+  "benchmark_source": "Unmodified top-level V3 results in the supplied tmc_project archive; SHA-256 values match the earlier README benchmark_summary.json.",
+  "simulation_source": "Supplied source/checkpoint; Joint / seed 0 / Full MPC / default SimConfig; Source Only and CTTA newly recorded on CPU; existing CAMPE replay independently rerun and exactly matched.",
+  "no_full_benchmark_rerun": true,
+  "time_convention": "step=-1 is the initial state at t=0; step j>=0 is recorded after its transition, at (j+1)*0.5 s.",
+  "domain_boundaries_s": [
+    30.0,
+    63.0,
+    99.0
+  ],
+  "charts": {
+    "tracking_comparison": "Three raw radial-error traces; initial state included in lines; episode means exclude step=-1. One illustrative episode per method, not multi-seed averages.",
+    "evolution_heatmap": "Ten logged/derived signals from post-step CAMPE records. Each row is min-max normalized over all 300 steps, without smoothing. Speeds are finite differences of positions divided by dt; per is the logged EMA estimate. This uses the same mechanism-view idea as Fig. 7, not an exact reproduction of its normalized curves.",
+    "radial_error_histogram": "One value per episode (radius_error), 40 released episodes for each of Source Only, CTTA and CAMPE. Fixed 0.25 m bins from 0 to 4 m; every observation is included. The animation adds matched seed-scenario rows, not mission time.",
+    "benchmark_heatmap": "Two views: 6 methods x 4 structured regimes and 4 methods x 10 OOD scenarios. Each cell is 10-seed medium-profile success percentage; shared 0-100 scale; reveal order is presentation only.",
+    "aoi_distribution": "Empirical cumulative distribution of episode-mean aoi for Fixed USV, FIM Only, Dual-Plane and Full MPC (50 episodes each); a subset of the six planners in Table IV, explicitly named. Animation scans the AoI threshold, not simulation/training time."
+  },
+  "statistical_scope": "Plots show empirical data, not population guarantees. Histograms/ECDFs show distributions, not confidence intervals; correlations or aligned traces do not by themselves identify causal effects.",
+  "files": {
+    "assets/data/README.md": {
+      "sha256": "9665e3c873435a899e0d8e9543cb3869a8eb5ac2eefb027ebf30d9e3569a5153",
+      "bytes": 4101
+    },
+    "assets/data/benchmark_summary.json": {
+      "sha256": "584c951f588f00daaf94211852a96fcefc9428da81e44d6bd79fd10b7982afc9",
+      "bytes": 5974
+    },
+    "assets/data/benchmarks/adaptation_raw.csv": {
+      "sha256": "f210483092aa02a005b4af5aa7cc9fb9f59781eed2efcb173fbf5497aaa4cd18",
+      "bytes": 228987
+    },
+    "assets/data/benchmarks/control_plane_raw.csv": {
+      "sha256": "6fd130a5759fd22ed37c9f6e733bc46206b620773fc128166d75e4b672cc8c5d",
+      "bytes": 305574
+    },
+    "assets/data/benchmarks/robustness_raw.csv": {
+      "sha256": "db08484effbba8418478e5d4ae1a62b08d66d7f31f2a44ad6fd6aaded1f1fc32",
+      "bytes": 372498
+    },
+    "assets/data/campe_joint_seed0_metadata.json": {
+      "sha256": "c2d359b95e1ac91a704a9e72bbaf20b882a84657fcc26938b24b7e0ade37b44a",
+      "bytes": 8267
+    },
+    "assets/data/campe_joint_seed0_rerun_metadata.json": {
+      "sha256": "6ae48c889e20c4879ba0a5b79691dea0451de4a14ea7dc0fe0dac92362410984",
+      "bytes": 8263
+    },
+    "assets/data/campe_joint_seed0_trace.csv": {
+      "sha256": "9c4e3a83e84aeebef7224c725a1a9659214c8cf14b660036c9c8341bbb69d5c9",
+      "bytes": 257378
+    },
+    "assets/data/ctta_joint_seed0_metadata.json": {
+      "sha256": "770fe6db3ab5e294845a4a3eb9c62678813a9eec15b76ffd0f5fcef049c24bba",
+      "bytes": 8272
+    },
+    "assets/data/ctta_joint_seed0_trace.csv": {
+      "sha256": "904994a1febed1b1ebae43c906769c8997104e4bebb5d3258227359681394c22",
+      "bytes": 244139
+    },
+    "assets/data/heatmap_normalization.json": {
+      "sha256": "63a75dbfb7a0284b24de56845f25f99774f43ff11bd122129b8de995fc4a0115",
+      "bytes": 1228
+    },
+    "assets/data/source_only_joint_seed0_metadata.json": {
+      "sha256": "1b03949c4205d51de3c1b4baf967e9f2d8c417bd5ba47c582e95ea4fb03843a2",
+      "bytes": 8130
+    },
+    "assets/data/source_only_joint_seed0_trace.csv": {
+      "sha256": "b24e49268c9f053dcbe4177437d0f2a731257e20b9a0a60369c99ec65043d65b",
+      "bytes": 230252
+    }
+  }
+}
